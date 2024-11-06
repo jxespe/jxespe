@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 16 Series - Online Store</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>iPhone 16 Series - Online Store</h1>
+        <nav>
+            <a href="cart.html" id="cart-link">Cart (0)</a>
+        </nav>
+    </header>
+
+    <section id="weather-section">
+        <h2>Weather Information</h2>
+        <div>
+            <input type="text" id="city-name" placeholder="Enter city name">
+            <button id="get-weather-btn">Get Weather</button>
+        </div>
+        <div id="weather-result">
+            <p id="weather-status"></p>
+            <p id="weather-temperature"></p>
+            <p id="weather-description"></p>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Available Products</h2>
+        <div id="product-list">
+            <!-- Products will be dynamically injected here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 iPhone 16 Series Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* General Styles for Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+    background-image: url('https://example.com/background-image.jpg'); /* Optional: Replace with your own image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+}
+
+header nav a:hover {
+    background-color: #45a049;
+}
+
+#products {
+    display: flex;
+    justify-content: flex-start; /* Align products to the left */
+    margin: 20px;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    gap: 20px; /* Spacing between products */
+    padding-bottom: 20px; /* To prevent products from touching the bottom */
+}
+
+.product {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    min-width: 250px; /* Ensures product items stay consistent in width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.product select {
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.product button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.product button:hover {
+    background-color: #45a049;
+}
+
+/* Weather Section Styling */
+#weather-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for weather section */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#weather-section input,
+#weather-section button {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#weather-section input {
+    width: 60%;
+}
+
+#weather-section button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#weather-section button:hover {
+    background-color: #45a049;
+}
+
+/* Weather Result Styling */
+#weather-result {
+    margin-top: 20px;
+}
+
+#weather-status,
+#weather-temperature,
+#weather-description {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    #products {
+        flex-direction: column; /* Stacks products vertically on smaller screens */
+        align-items: center; /* Centers the products */
+    }
+
+    .product {
+        width: 90%; /* Makes products take up more width on smaller screens */
+        min-width: 90%;
+    }
+
+    #weather-section {
+        width: 95%; /* Makes the weather section more narrow on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%; /* Makes product cards full width on very small screens */
+    }
+
+    #weather-section {
+        width: 100%; /* Makes weather section take full width on mobile */
+    }
+}
